@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Alexandra-Gabriela Docan">
+    <meta name="keywords" content="HTML, architecture, portofolio, interior design">
+    <meta name="description"
+        content="Sophia Miller is an Interior Designer and this is her portofolio. Step into the world of interior design mastery with Sophia's remarkable collection. Immerse yourself in a showcase of beautifully transformed spaces, each a testament to her passion and talent, and find inspiration for your own design endeavors.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Edu+TAS+Beginner&family=Kalam:wght@300;400&family=Merriweather:wght@300&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <title> Sophia Miller &#183 Interior Designer </title>
+    <link rel="icon" sizes="192x192" href="icons/icon4_SophiaMiller.png">
+
+
+    <!-- CSS STYLES -->
+
+
+    <style>
+        /* GENERAL */
+
+        * {
+            box-sizing: border-box;
+
+
+        }
+
+
+
+        body {
+            color: white;
+            margin: 0;
+            height: fit-content;
+            background-color: rgba(0, 0, 0, 0.852);
+
+
+
+
+        }
+
+        /* GENERAL */
+
+
+        /* HEADER */
+        .header {
+
+            position: fixed;
+            background: rgb(0, 0, 0);
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.8671919451374299) 51%, rgba(0, 0, 0, 1) 60%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100%;
+            height: 60px;
+
+            z-index: 500;
+        }
+
+        /* HEADER */
+
+        /* LEFT SECTION */
+        .left-section {
+            display: flex;
+            justify-content: center;
+        }
+
+        .icon-header {
+            height: 70px;
+            margin-top: -10px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .name-header {
+            height: 50px;
+            margin-top: 7px;
+            margin-left: -30px;
+            padding-left: 7px;
+            cursor: pointer;
+        }
+
+        /* LEFT SECTION */
+
+
+        /* RIGHT SECTION */
+        .right-section {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-right: 20px;
+            list-style-type: none;   
+        
+        }
+
+        .nav-buttons {
+            margin-left: 20px;
+            padding-left: 10px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-right: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            list-style-type: none;
+            background: rgb(217, 191, 255);
+            background: linear-gradient(90deg, rgba(217, 191, 255, 1) 14%, rgba(103, 220, 233, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+     }
+
+        .nav-buttons:hover {
+            border: 1px dotted white;
+            padding-left: 9px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-right: 9px;
+            transform: scale(1.3);
+        }
+
+        .nav-buttons:active {
+            background: rgb(217, 191, 255);
+            background: linear-gradient(90deg, rgba(217, 191, 255, 1) 14%, rgba(103, 220, 233, 1) 100%);
+
+            -webkit-text-fill-color: transparent;
+            border: 1px solid transparent;
+        }
+
+        /* RIGHT SECTION */
+
+        /* HEADER */
+
+        /* START */
+        .start-picture {
+            width: 100%;
+            position: relative;
+        }
+
+        .start-items1 {
+            position: absolute;
+            top: 390px;
+            left: 20px;
+            font-size: 45px;
+            color: white;
+            width: 350px;
+            height: 77px;
+            text-align: center;
+            padding: 10px 10px;
+            padding-top: 12px;
+            text-shadow: 2px 3px 1px rgb(0, 0, 0);
+        }
+
+        .start-items2 {
+            position: absolute;
+            top: 455px;
+            left: 180px;
+            font-size: 25px;
+            color: white;
+            text-shadow: 2px 3px 1px rgb(0, 0, 0);
+        }
+
+        .start-items1:hover,
+        .start-items2:hover {
+            text-shadow: none;
+            background: rgb(217, 191, 255);
+            background: linear-gradient(90deg, rgba(217, 191, 255, 1) 14%, rgba(103, 220, 233, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
+        }
+
+        .start-items-background {
+            position: absolute;
+            top: 425px;
+            left: 45px;
+            background-color: rgba(0, 0, 0, 0.684);
+            width: 350px;
+            height: 87px;
+            border-radius: 510px;
+        }
+
+        .start-picture-border {
+            position: absolute;
+            width: 100%;
+            height: 66px;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7635504885547969) 4%, rgba(0, 0, 0, 0.9512255585828081) 50%);
+            top: 585px;
+        }
+
+        .introduction {
+            color: white;
+            background-color: black;
+            margin-top: 15px;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 100px 50px 100px;
+            position: relative;
+            padding-top: 45px;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+        }
+
+        /* START */
+
+        /* ABOUT */
+        .intro-div {
+            display: flex;
+            flex: auto;
+        }
+
+        .about {
+
+            background-color: black;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            width: 100%;
+            flex: 1fr 1fr;
+            margin-top: 55px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .Sophia-Miller {
+            margin: 42px 70px 42px 40px;
+
+            border: 10px inset white;
+        }
+
+        .about div {
+            margin-left: 45px;
+        }
+
+        .about h2 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+            margin-bottom: 70px;
+        }
+
+        .about p {
+            color: white;
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+        }
+
+        /* ABOUT */
+
+        /* EDUCATION */
+        .Education {
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex: 1fr 1fr 1fr;
+        }
+
+        .Education div {
+            border-right: 4px solid rgba(255, 255, 255, 0.458);
+            border-bottom: 4px solid white;
+            padding-right: 50px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+        }
+
+        .education-title {
+            text-align: center;
+            font-size: 35px;
+            font-weight: bolder;
+            background: rgb(217, 191, 255);
+            background: linear-gradient(90deg, rgba(217, 191, 255, 1) 14%, rgba(103, 220, 233, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .education-list {
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 20px;
+        }
+
+        .Education span {
+            font-style: italic;
+            font-weight: bolder;
+            color: gold;
+        }
+
+        /* EDUCATION */
+
+        /* PORTOFOLIO */
+        .Portofolio {
+            margin-top: 55px;
+            background-color: black;
+            border-top: 4px solid white;
+            text-align: center;
+            padding-bottom: 50px;
+            border-bottom: 4px solid white;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .Portofolio h2 {
+            font-size: 50px;
+            text-decoration-line: underline;
+            padding-top: 10px;
+        }
+
+        .Portofolio p {
+            padding: 30px 85px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        .portofolio-pictures {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            row-gap: 30px;
+
+        }
+
+        .photo {
+            height: 400px;
+            width: 100%;
+            cursor: pointer;
+            margin-top: -20px;
+        }
+
+        .portofolio-pictures span {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 400;
+            font-size: 40px;
+            color: gold;
+        }
+
+        .portofolio-pictures h3 {
+            word-spacing: 5px;
+            font-size: 25px;
+            font-family: 'Edu TAS Beginner', cursive;
+        }
+
+        .photo-1-div:active {
+            transform: scale(1.2);
+
+        }
+
+        .photo:active {
+            background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+                radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+                radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+                radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+                linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+                linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+                repeating-linear-gradient(277deg, #521010 0%, #d12525 25%, #860909 50%, #d12525 75%, #521010 100%);
+            border-radius: 8px;
+            padding: 9px;
+            box-sizing: border-box;
+        }
+
+        .photo-2-div:active {
+            transform: scale(1.2);
+        }
+
+        .photo-3-div:active {
+            transform: scale(1.2);
+        }
+
+        .photo-4-div:active {
+            transform: scale(1.2);
+        }
+
+        .photo-5-div:active {
+            transform: scale(1.2);
+        }
+
+        .photo-6-div:active {
+            transform: scale(1.2);
+        }
+
+        /* PORTOFOLIO */
+
+        /* PACKAGES */
+        .Packages {
+            margin-top: 55px;
+            background-color: black;
+            border-bottom: 5px solid white;
+            border-top: 5px solid white;
+        }
+
+        .prices {
+            margin-bottom: -50px;
+        }
+
+        .Packages h2 {
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+            padding-top: 10px;
+        }
+
+        .par-prices {
+            font-size: 20px;
+            text-align: center;
+            padding: 2px 30px;
+        }
+
+        .package-list span {
+            font-weight: bold;
+
+        }
+
+        .Packages h4 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .bronze,
+        .silver,
+        .gold {
+            text-align: center;
+            font-size: 25px;
+            padding: 2px 10px;
+            margin-top: -35px;
+            font-style: italic;
+        }
+
+        .Packages-row {
+            display: flex;
+            flex-direction: row;
+            padding: 5px 30px;
+        }
+
+        .type {
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+        }
+
+        .package-list {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .package-list li {
+            margin-top: 20px;
+        }
+
+        .silver {
+            background: rgb(89, 89, 89);
+            background: linear-gradient(90deg, rgba(89, 89, 89, 1) 1%, rgba(237, 237, 237, 1) 24%, rgba(89, 89, 89, 1) 49%, rgba(237, 237, 237, 1) 75%, rgba(89, 89, 89, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Kalam', cursive;
+            font-weight: 400;
+            font-size: 45px;
+        }
+
+        .gold {
+            background: rgb(73, 61, 22);
+            background: linear-gradient(90deg, rgba(73, 61, 22, 1) 1%, rgba(255, 223, 46, 1) 24%, rgba(142, 114, 26, 1) 49%, rgba(255, 223, 46, 1) 75%, rgba(73, 61, 22, 1) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Kalam', cursive;
+            font-weight: 400;
+            font-size: 45px;
+        }
+
+        .bronze {
+            background: rgb(179, 113, 57);
+            background: linear-gradient(90deg, rgba(179, 113, 57, 1) 1%, rgba(255, 189, 106, 1) 33%, rgba(198, 130, 73, 1) 49%, rgba(255, 189, 106, 1) 64%, rgba(179, 113, 57, 1) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Kalam', cursive;
+            font-weight: 400;
+            font-size: 45px;
+        }
+
+        .bronze-p {
+            background: rgb(179, 113, 57);
+            background: linear-gradient(90deg, rgba(179, 113, 57, 1) 1%, rgba(255, 189, 106, 1) 33%, rgba(198, 130, 73, 1) 49%, rgba(255, 189, 106, 1) 64%, rgba(179, 113, 57, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 25px;
+            text-align: center;
+            font-style: italic;
+            margin-top: -30px;
+        }
+
+        .silver-p {
+            background: rgb(89, 89, 89);
+            background: linear-gradient(90deg, rgba(89, 89, 89, 1) 1%, rgba(237, 237, 237, 1) 24%, rgba(89, 89, 89, 1) 49%, rgba(237, 237, 237, 1) 75%, rgba(89, 89, 89, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 25px;
+            text-align: center;
+            font-style: italic;
+            margin-top: -30px;
+        }
+
+        .gold-p {
+            background: rgb(73, 61, 22);
+            background: linear-gradient(90deg, rgba(73, 61, 22, 1) 1%, rgba(255, 223, 46, 1) 24%, rgba(142, 114, 26, 1) 49%, rgba(255, 223, 46, 1) 75%, rgba(73, 61, 22, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 25px;
+            text-align: center;
+            font-style: italic;
+            margin-top: -30px;
+        }
+
+        .bronze-list:hover {
+            background: linear-gradient(90deg, rgba(179, 113, 57, 1) 1%, rgba(255, 189, 106, 1) 33%, rgba(198, 130, 73, 1) 49%, rgba(255, 189, 106, 1) 64%, rgba(179, 113, 57, 1) 100%);
+            color: black;
+            cursor: pointer;
+            height: 400px;
+        }
+
+        .silver-list:hover {
+            background: linear-gradient(90deg, rgba(89, 89, 89, 1) 1%, rgba(237, 237, 237, 1) 24%, rgba(89, 89, 89, 1) 49%, rgba(237, 237, 237, 1) 75%, rgba(89, 89, 89, 1) 100%);
+            color: black;
+            cursor: pointer;
+            height: 400px;
+        }
+
+        .gold-list:hover {
+            background: linear-gradient(90deg, rgba(73, 61, 22, 1) 1%, rgba(255, 223, 46, 1) 24%, rgba(142, 114, 26, 1) 49%, rgba(255, 223, 46, 1) 75%, rgba(73, 61, 22, 1) 100%);
+            color: black;
+            height: 400px;
+        }
+
+        /* PACKAGES */
+
+
+        /* CONTACT */
+        .Contact {
+            background-color: black;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            width: 100%;
+            margin-top: 55px;
+        }
+
+        .Contact h2 {
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+            padding-top: 10px;
+        }
+
+        .contact-subtitle {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .contact-description {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+            padding-top: 40px;
+            padding-left: 0px;
+            padding-bottom: 30px;
+        }
+
+        .phone {
+            text-align: center;
+        }
+
+
+        .email {
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .location {
+            text-align: center;
+        }
+
+        .office {
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+        .title-contact {
+            font-size: 25px;
+            background: rgb(217, 191, 255);
+            background: linear-gradient(90deg, rgba(217, 191, 255, 1) 14%, rgba(103, 220, 233, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
+
+        }
+
+        .title-contact:hover {
+            transform: scale(1.2);
+
+        }
+
+        .text-contact {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .link {
+            color: white;
+
+        }
+
+        .link:hover {
+            text-shadow: white 1px 0 8px, white 2px 0 8px, white 3px 0 8px, white 3px 0 8px, white 4px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px;
+            color: black;
+        }
+
+        .text-contact:hover {
+            text-shadow: white 1px 0 8px, white 2px 0 8px, white 3px 0 8px, white 3px 0 8px, white 4px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px, white 1px 0 8px;
+            color: black;
+        }
+
+        /* CONTACT */
+    </style>
+
+
+    <!--  CSS STYLES -->
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="left-section">
+            <img src="icons/S.png" alt="A logo that contains the letter S " class="icon-header">
+            <img src="icons/Sophia-Miller.png" alt="The name of Sophia Miller" class="name-header">
+        </div>
+
+        <nav>
+            <ul class="right-section">
+                <li> <a href="#Home" class="nav-buttons">Home</a></li>
+                <li> <a href="#About" class="nav-buttons">About</a></li>
+                <li><a href="#Portofolio" class="nav-buttons">Portofolio</a></li>
+                <li><a href="#Prices" class="nav-buttons">Prices</a></li>
+                <li><a href="#Contact" class="nav-buttons">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <!-- HEADER -->
+
+
+    <!-- First picture - start -->
+    <div id="Home" class="start">
+        <img src="Poze portofoliu design/start-picture.jpg"
+            alt="A picture of a digital plan of a room being brought to reality" class="start-picture">
+        <div class="start-items-background"> </div>
+        <h1 class="start-items1"> Sophia Miller </h1>
+        <h2 class="start-items2">Interior Designer</h2>
+        <div class="start-picture-border"> </div>
+    </div>
+    <!-- First picture - start -->
+
+    <!-- Introduction -->
+    <div class="intro-div">
+        <p class="introduction">
+            Welcome to the captivating world of Sophia Miller - where creativity, aesthetics and innovation merge to
+            transform spaces into breathtaking works of art. With a passion for interior design that transcends the
+            ordinary, Sophia invites you to embark on a visual journey through a portfolio that showcases the magic of
+            turning living spaces into masterpieces.
+
+            Let the images and stories within these virtual walls speak to you and discover how Sophia Miller can turn
+            your interior design dreams into reality. Welcome to a world of design that inspires, uplifts, and
+            transforms.
+        </p>
+    </div>
+    <!-- Introduction -->
+
+    <!-- About -->
+    <div id="About" class="about">
+        <img src="icons/Sophia Miller.jpg" alt="A picture of Sophia Miller" class="Sophia-Miller">
+        <div class="about-me-background"> </div>
+        <div>
+            <h2>About</h2>
+            <p>Greetings, I'm Sophia, and I warmly welcome you to my creative haven – a portfolio that embodies my
+                lifelong passion for interior design.
+
+            </p>
+
+            <p>
+                Design, for me, is not just about aesthetics; it's a means to weave narratives, evoke emotions, and
+                create spaces that resonate with individuality. With an unwavering love for beauty and an innate desire
+                to make the ordinary extraordinary, I've dedicated my life to crafting spaces that inspire, comfort, and
+                captivate.
+            </p>
+
+            <p>
+                Each design within these pages reflects a unique chapter of my journey – from humble beginnings to the
+                culmination of years of dedication. From the delicate balance of colors to the harmonious fusion of
+                textures, every project I undertake is a canvas on which I paint the dreams and desires of my clients.
+            </p>
+        </div>
+    </div>
+    <!-- About -->
+
+    <!-- Education -->
+    <div class="Education">
+
+        <div class="Educational-Background">
+            <h3 class="education-title">Educational Background</h3>
+            <ol>
+                <li class="education-list">
+                    <span>Bachelor's Degree in Interior Design:</span> Sophia pursued her passion for interior design by
+                    earning a
+                    Bachelor's Degree in Interior Design from the renowned School of Design and Architecture at
+                    [Fictional University]. This comprehensive program exposed her to fundamental design principles,
+                    spatial planning, color theory, and the use of various design software tools.
+
+                </li>
+
+                <li class="education-list">
+                    <span>Master's Degree in Interior Design and BIM Architecture :</span> Building upon her foundation,
+                    Sophia later
+                    completed a Master's Degree in Environmental Design, focusing on sustainable and eco-friendly design
+                    solutions. She researched and wrote her thesis on the impact of sustainable materials in
+                    contemporary
+                    interior design, contributing to the field's sustainability discourse.
+                </li>
+            </ol>
+        </div>
+
+        <div class="Certifications and Additional Training">
+            <h3 class="education-title">Certifications and Additional Training</h3>
+            <ul>
+                <li class="education-list">
+                    <span>Certified Interior Designer (CID):</span> After completing her formal education, Sophia
+                    obtained her CID
+                    certification, which required passing a rigorous examination and meeting work experience
+                    requirements. This certification established her as a qualified interior design professional.
+
+                </li>
+
+                <li class="education-list">
+                    <span>Advanced CAD and 3D Modeling Training:</span> Sophia invested in additional training to
+                    enhance her
+                    proficiency with Computer-Aided Design (CAD) and 3D modeling software. This expertise allows her to
+                    create detailed, realistic visualizations of her design concepts.
+                </li>
+
+                <li class="education-list">
+                    <span>Continuing Education in Trends and Materials: </span> Sophia is committed to staying current
+                    in the
+                    ever-evolving world of interior design. She regularly attends workshops, seminars, and conferences
+                    to keep abreast of the latest design trends and innovations in materials and technology.
+                </li>
+            </ul>
+        </div>
+
+        <div class="Professional Experience">
+            <h3 class="education-title">Professional Experience</h3>
+            <ul>
+                <li class="education-list">
+                    <span>Internship with a Leading Design Firm:</span> Sophia gained hands-on experience during her
+                    internship with [Prestigious Design Firm]. There, she worked on high-profile residential and
+                    commercial projects, refining her design skills and learning the intricacies of client
+                    collaboration.
+
+                </li>
+
+                <li class="education-list">
+                    <span>Independent Design Consultant: </span>After completing her education and gaining valuable
+                    experience, Sophia launched her own interior design consultancy. She's worked on an array of
+                    projects, including residential makeovers, office renovations, and restaurant redesigns, all of
+                    which demonstrate her versatile design abilities.
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Education -->
+
+    <!-- Portofolio -->
+    <div id="Portofolio" class="Portofolio">
+        <div>
+            <h2> Portofolio </h2>
+            <p>Sophia Miller's portfolio is a showcase of her exceptional talent in crafting stylish and functional
+                interior spaces. With a signature blend of creativity and precision, Sophia transforms spaces into
+                personalized havens that captivate and inspire.</p>
+        </div>
+
+        <div class="portofolio-pictures">
+            <div class="photo-1-div">
+                <h3> <span>Residential</span> Living</h3>
+                <img src="portofoliu/photo-1.jpg" alt="" class="photo">
+            </div>
+
+            <div class="photo-2-div">
+                <h3><span>Residential</span> Bathroom</h3>
+                <img src="portofoliu/photo-2.jpg" alt="" class="photo">
+            </div>
+
+            <div class="photo-3-div">
+                <h3><span>Residential</span> Hallway</h3>
+                <img src="portofoliu/photo-3.jpg" alt="" class="photo">
+            </div>
+
+            <div class="photo-4-div">
+                <h3><span>Residential</span> Kitchen </h3>
+                <img src="portofoliu/photo-4.jpg" alt="" class="photo">
+            </div>
+
+            <div class="photo-5-div">
+                <h3> <span>Residential</span> Kitchen</h3>
+                <img src="portofoliu/photo-5.jpg" alt="" class="photo">
+            </div>
+
+            <div class="photo-6-div">
+                <h3> <span>Residential</span> Living</h3>
+                <img src="portofoliu/interior-living.jpg" alt="" class="photo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Portofolio -->
+
+    <!-- Packages -->
+    <div id="Prices" class="Packages">
+        <div class="prices">
+            <h2>Prices</h2>
+            <p class="par-prices">These three packages provide a range of options, allowing clients to choose the level
+                of customization and luxury that best fits their vision and budget for a truly bespoke interior design
+                experience with Sophia Miller.</p>
+
+        </div>
+
+        <div class="Packages-row">
+            <div class="type">
+                <div >
+                    <h4> <span class="bronze">Bronze</span> Elegance Package </h4>
+                    <p class="bronze-p"> An entry-level option for clients seeking style on a budget</p>
+                </div>
+
+                <div class="bronze-list">
+                    <ul class="package-list">
+                        <li> <span class="pack">Basic Conceptual Design Board:</span> Visual representation of color
+                            schemes and basic furnishings
+                        </li>
+                        <li> <span class="pack">Space Planning: </span>Efficient layout optimization for functionality
+                        </li>
+                        <li> <span class="pack">Standard Material and Finish Selection:</span> Stylish yet
+                            cost-effective options</li>
+                        <li> <span class="pack">Email/Phone Consultation:</span> Regular communication to address client
+                            questions and concerns
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="type">
+                <div>
+                    <h4> <span class="silver">Silver</span> Signature Package</h4>
+                    <p class="silver-p"> A mid-range package for clients desiring a personalized touch</p>
+                </div>
+                <div class="silver-list">
+                    <ul class="package-list">
+                        <li> <span class="pack">Detailed Design Concept:</span> Customized theme and mood board
+                            reflecting client preferences.
+                        </li>
+                        <li> <span class="pack">Premium Material and Finish Selection:</span> Upgraded choices for a
+                            more refined aesthetic.
+                        </li>
+                        <li> <span class="pack">Furniture and Decor Coordination: </span>Curated selections to enhance
+                            the overall design</li>
+                        <li> <span class="pack">In-Person Consultation: </span>Face-to-face meetings to ensure a deeper
+                            understanding of client needs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="type">
+                <div>
+                    <h4> <span class="gold">Gold</span> Bespoke Package</h4>
+                    <p class="gold-p">A top-tier offering for clients seeking the pinnacle of luxury and exclusivity</p>
+                </div>
+
+                <div class="gold-list">
+                    <ul class="package-list">
+                        <li> <span class="pack">Exclusive Design Concept:</span> Tailored, high-end themes reflecting
+                            the client's unique style
+                        </li>
+                        <li> <span class="pack">Luxury Material and Finish Selection:</span> Premium, custom-made
+                            choices for a truly opulent feel.
+                        </li>
+                        <li> <span class="pack">Artisanal and Custom Furnishings:</span> Commissioning or sourcing
+                            unique, one-of-a-kind pieces
+                        </li>
+                        <li> <span class="pack">VIP Concierge Service:</span> Priority communication, on-site visits,
+                            and personal attention
+                            throughout the entire design process</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Packages -->
+
+    <!-- Contact -->
+    <div id="Contact" class="Contact">
+        <div>
+            <h2> Contact</h2>
+            <p class="contact-subtitle">Let's Create Your Dream Space!</p>
+            <p class="contact-description">If you have a project in mind or just want to discuss your interior design
+                needs, feel free to reach out.
+                Sophia Miller is passionate about bringing your design visions to life and creating spaces that reflect
+                your unique style and preferences. Whether it's a residential, commercial, or hospitality project, she's
+                here to help. Contact her today to start the conversation and embark on a journey of design excellence.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="phone">
+
+                <h4 class="title-contact">Phone</h4>
+                <p class="text-contact">Office: (700) 000-000 </p>
+                <p class="text-contact">Mobile: (700) 111-111</p>
+
+            </div>
+            <div class="email">
+
+                <h4 class="title-contact">Mail</h4>
+                <p class="text-contact">
+                    sophia@sophiamillerdesigns.com
+                </p>
+            </div>
+
+            <div class="location">
+
+                <h4 class="title-contact">Address</h4>
+                <p class="text-contact"> 123 Design Avenue</p>
+                <p class="text-contact"> Cityville, State 12345</p>
+                <p class="text-contact"> <a href="https://en.wikipedia.org/wiki/United_States" target="_blank"
+                        class="link">United States</a></p>
+            </div>
+
+            <div class="office">
+
+                <h4 class="title-contact">Office Hours</h4>
+                <p class="text-contact">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p class="text-contact">Saturday: By Appointment Only</p>
+                <p class="text-contact">Sunday: Closed</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <!-- END -->
+
+    <!-- END -->
+</body>
+
+</html>
